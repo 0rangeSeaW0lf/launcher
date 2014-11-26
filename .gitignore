@@ -1,32 +1,34 @@
-# C++ objects and libs
+*.rbc
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
 
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.dll
-*.dylib
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/secrets.yml
 
-# Qt-es
+## Environment normalisation:
+/.bundle
+/vendor/bundle
 
-/.qmake.cache
-/.qmake.stash
-*.pro.user
-*.pro.user.*
-*.moc
-moc_*.cpp
-qrc_*.cpp
-ui_*.h
-Makefile*
-*-build-*
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
 
-# QtCreator
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
 
-*.autosave
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
 
-#QtCtreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+#Cloud9
+.c9/
